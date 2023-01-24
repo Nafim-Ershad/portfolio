@@ -1,11 +1,27 @@
-@import './_variables';
+// @import './_variables';
 .header-container {
     height: 70px;
     padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: $headerFontStyle;
+    font-family: $interactionStyle;
+    div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: black;
+            text-decoration: none;
+            font-family: $nafimErshad;
+            font-size: 32px;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
     nav {
         width: 30%;
         height: 100%;
@@ -15,15 +31,24 @@
         span {
             width: 30%;
             height: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             a {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 color: black;
                 font-weight: 700;
                 font-size: 20px;
                 text-transform: uppercase;
                 text-decoration: none;
+                font-family: $interactionStyle;
+                &:hover {
+                    border-bottom: 2px solid $primaryColor;
+                }
+                &.active {
+                    border-bottom: 2px solid $primaryColor;
+                }
             }
         }
     }

@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-    res.send('Hello Contact!!');
+    res.render('contact', { title: 'Contact' });
 });
 
 module.exports = router;

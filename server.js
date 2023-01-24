@@ -1,8 +1,6 @@
 const express = require('express');
 const ejs = require('ejs');
 const path = require('path');
-const sass = require('node-sass');
-const sassMiddleware = require('node-sass-middleware');
 require('dotenv').config();
 
 const app = express();
@@ -16,14 +14,6 @@ const contactRouter = require('./routes/contact');
 
 // MIDDLEWARES
 app.use(express.json());
-app.use(
-    sassMiddleware({
-        src: path.join(__dirname, 'sass'),
-        dest: path.join(__dirname, 'public/stylesheets'),
-        debug: true,
-        outputStyle: 'compressed'
-    })
-);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // VIEW ENGINE SET-UP
