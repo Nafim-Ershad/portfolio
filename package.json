@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build-css": "node-sass ./sass/main.scss --output ./public/stylesheets",
+        "build-css": "node-sass ./sass/main.scss --output ./public/css",
         "watch-css": "nodemon -e scss -x \" npm run build-css \"",
         "dev": "nodemon ./server.js"
     },
