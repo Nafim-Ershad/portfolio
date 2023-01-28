@@ -40,15 +40,11 @@
         .about-description {
             width: 80%;
             padding: 15px 20px;
+            margin-bottom: 25px;
             font-size: 1.75rem;
+            text-align: justify;
             span {
-                &:nth-child(1) {
-                    color: $secondaryColor;
-                    text-shadow: $secondaryColor 1px 0 10px;
-                }
-                &::nth-child(2) {
-                    color: $secondaryColor;
-                }
+                color: $primaryColor;
             }
         }
         .skills-container {

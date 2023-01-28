@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/0423009547.js" crossorigin="anonymous"></script>
     <title>
         <%=title%>
     </title>
@@ -27,7 +28,39 @@
                 </span>
         </nav>
     </header>
-    <script src="" async defer></script>
+
+    <section id="contact-container">
+        <div id="social-container">
+            <div class="social-facebook">
+                <i class="fa-brands fa-square-facebook"></i>
+                <span>Facebook</span>
+            </div>
+            <div class="social-instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </div>
+            <div class="social-email">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Mail</span>
+            </div>
+        </div>
+        <form id="direct-message-container">
+            <div>
+                <label>Full Name:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email">
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            <div class="send-button">Send Inquiry</div>
+        </form>
+    </section>
+    <script src="./js/contact.js" async defer></script>
 </body>
 
 </html>
