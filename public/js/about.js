@@ -1,17 +1,7 @@
-const skillCont = document.querySelector('.skills-known-container');
-const skills = [{
-    class: 'html',
-    innerText: 'HTML',
-}, {
-    class: 'css',
-    innerText: 'CSS',
-}, {
-    class: 'js',
-    innerText: 'JavaScript',
-}, {
-    class: 'python',
-    innerText: 'Python',
-}]
+import skills from './__skillList.js';
+
+const skillCont = document.querySelector('.skills-container');
+
 
 function skillProducer(arr) {
     const divArr = arr.map(ele => {
