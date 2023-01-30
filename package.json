@@ -10,6 +10,7 @@
         "nodemon": "^2.0.20"
     },
     "dependencies": {
+        "@mdi/font": "^7.1.96",
         "ejs": "^3.1.8",
         "express": "^4.18.2"
     }
