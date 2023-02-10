@@ -47,20 +47,20 @@
                 <a href="https://www.instagram.com/nafim_ershad/"><span>Instagram</span></a>
             </div>
         </div>
-        <form id="direct-message-container">
+        <form id="direct-message-form">
             <div>
                 <label>Full Name:</label>
-                <input type="text">
+                <input type="text" name="fullname">
             </div>
             <div>
                 <label>Email:</label>
-                <input type="email">
+                <input type="email" name="email">
             </div>
             <div>
                 <label>Message</label>
-                <textarea cols="30" rows="10"></textarea>
+                <textarea cols="30" rows="10" name="message"></textarea>
             </div>
-            <div class="send-button">Send Inquiry</div>
+            <input type="submit" value="Send Inquiry" class="send-button">
         </form>
     </section>
     <script src="./js/contact.js" async defer></script>

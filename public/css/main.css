@@ -223,16 +223,16 @@
         color: #0d65c6; }
       #contact-container #social-container div.social-email a span:hover {
         color: #1f9ee3; }
-  #contact-container #direct-message-container {
+  #contact-container #direct-message-form {
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr); }
-    #contact-container #direct-message-container div {
+    #contact-container #direct-message-form div {
       width: 80%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-evenly; }
-      #contact-container #direct-message-container div input {
+      #contact-container #direct-message-form div input {
         width: 80%;
         height: 1.5rem;
         display: flex;
@@ -240,30 +240,31 @@
         justify-content: center;
         border-bottom: 2px solid black;
         outline: none; }
-        #contact-container #direct-message-container div input:active, #contact-container #direct-message-container div input:focus {
+        #contact-container #direct-message-form div input:active, #contact-container #direct-message-form div input:focus {
           border-bottom: 2px solid #4d4de7; }
-      #contact-container #direct-message-container div textarea {
+      #contact-container #direct-message-form div textarea {
         width: 80%;
         border: 2px solid black;
         padding: 10px 15px;
         resize: none;
         outline: none; }
-        #contact-container #direct-message-container div textarea:active, #contact-container #direct-message-container div textarea:focus {
+        #contact-container #direct-message-form div textarea:active, #contact-container #direct-message-form div textarea:focus {
           border: 2px solid #4d4de7; }
-      #contact-container #direct-message-container div.send-button {
-        width: 120px;
-        height: 50px;
-        border: 2px solid black;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: all 300ms ease-in-out; }
-        #contact-container #direct-message-container div.send-button:hover {
-          border: 2px solid #4d4de7;
-          color: #4d4de7; }
-        #contact-container #direct-message-container div.send-button:active {
-          background-color: #4d4de7;
-          color: white;
-          border: none; }
+    #contact-container #direct-message-form .send-button {
+      width: 120px;
+      height: 50px;
+      border: 2px solid black;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 300ms ease-in-out; }
+      #contact-container #direct-message-form .send-button:hover {
+        border: 2px solid #4d4de7;
+        color: #4d4de7; }
+      #contact-container #direct-message-form .send-button:active {
+        background-color: #4d4de7;
+        color: white;
+        border: none; }

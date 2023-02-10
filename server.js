@@ -1,6 +1,7 @@
 const express = require('express');
 const ejs = require('ejs');
 const path = require('path');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
@@ -15,6 +16,7 @@ const contactRouter = require('./routes/contact');
 // MIDDLEWARES
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 
 // VIEW ENGINE SET-UP
 app.set('views', __dirname + '/views');
